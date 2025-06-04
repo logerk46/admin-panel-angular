@@ -4,7 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashComponent } from './dash/dash.component';
 
 
-const routes: Routes = [{path: 'dashboard', component: DashComponent}];
+const routes: Routes = [
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: DashComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
