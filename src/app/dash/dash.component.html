@@ -7,6 +7,9 @@
       <app-mini-card [title]="mc.title" [value]="mc.value" [color]="mc.color" [icon]="mc.icon"
         [percentValue]="mc.percentValue"></app-mini-card>
     </mat-grid-tile>
+    <mat-grid-tile [colspan]="( cardLayout | async )?.miniCard.cols" [rowspan]="( cardLayout | async )?.miniCard.rows">
+      <app-summary-score-widget></app-summary-score-widget>
+    </mat-grid-tile>
     <!--Charts-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
       <app-card title="Monthly Revenue">
