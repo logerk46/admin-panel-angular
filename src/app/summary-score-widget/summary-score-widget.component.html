@@ -1,0 +1,11 @@
+<mat-card class="dashboard-card score-card">
+  <mat-card-header>
+    <mat-card-title>Summary Score</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="dashboard-card-content">
+    <div class="score-container">
+      <mat-progress-spinner mode="determinate" [value]="score" diameter="100"></mat-progress-spinner>
+      <div class="score-text">{{score}}</div>
+    </div>
+  </mat-card-content>
+</mat-card>

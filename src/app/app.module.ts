@@ -17,6 +17,7 @@ import { DashComponent } from './dash/dash.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CardComponent } from './card/card.component';
 
 import { ProductSalesChartComponent } from './charts/product-sales-chart/product-sales-chart.component';
@@ -28,6 +29,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MiniCardComponent } from './mini-card/mini-card.component';
+import { SummaryScoreWidgetComponent } from './summary-score-widget/summary-score-widget.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { MiniCardComponent } from './mini-card/mini-card.component';
     AnnualSalesChartComponent,
     StoreSessionsChartComponent,
     OrdersTableComponent,
-    MiniCardComponent
+    MiniCardComponent,
+    SummaryScoreWidgetComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { MiniCardComponent } from './mini-card/mini-card.component';
     MatMenuModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
